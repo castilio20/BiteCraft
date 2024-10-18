@@ -27,13 +27,13 @@ public class ModItems {
     public static final DeferredItem<Item> STEW_CHICKEN = ITEMS.register("stew_chicken",
             () -> new Item(new Item.Properties().food(ModFoodProperties.STEW_CHICKEN).stacksTo(1)));
     public static final DeferredItem<Item> PIE_SLICE = ITEMS.register("pie_slice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.DOUGH)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.PIE_SLICE)));
     public static final DeferredItem<Item> CAKE_SLICE = ITEMS.register("cake_slice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.DOUGH)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CAKE_SLICE)));
 
 
 
-    //Honey produce
+    //Honey products
     public static final DeferredItem<Item> HONEY_BREAD = ITEMS.register("honey_bread",
             () -> new Item(new Item.Properties().food(ModFoodProperties.HONEY_BREAD)));
     public static final DeferredItem<Item> HONEY_APPLE = ITEMS.register("honey_apple",

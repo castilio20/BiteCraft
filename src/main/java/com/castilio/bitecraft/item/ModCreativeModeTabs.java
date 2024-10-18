@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_BACON);
                         output.accept(ModItems.COOKED_BACON);
                         output.accept(ModItems.STEW_CHICKEN);
+                        //Veggy
                         output.accept(ModItems.GOLDEN_POTATO);
                         output.accept(ModItems.GOLDEN_POISON_POTATO);
 
@@ -32,7 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PIE_SLICE);
                         output.accept(ModItems.CAKE_SLICE);
 
-                        //Honey produce
+                        //Honey product
                         output.accept(ModItems.HONEY_BREAD);
                         output.accept(ModItems.HONEY_APPLE);
                         output.accept(ModItems.HONEY_COOKIE);
