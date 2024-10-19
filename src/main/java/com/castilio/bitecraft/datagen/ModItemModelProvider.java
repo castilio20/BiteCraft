@@ -21,5 +21,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.STEW_CHICKEN.get());
         basicItem(ModItems.GOLDEN_POTATO.get());
 
+        basicItem(ModItems.CAKE_SLICE.get());
+        basicItem(ModItems.PIE_SLICE.get());
+
     }
 }
