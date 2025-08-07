@@ -11,21 +11,20 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = BiteCraft.MODID, dist = Dist.CLIENT)
+//@Mod(value = BiteCraft.MODID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = BiteCraft.MODID, value = Dist.CLIENT)
-public class BitecraftModClient {
-    public BitecraftModClient(ModContainer container) {
+//p/ublic class BitecraftModClient {
+ //   public BitecraftModClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
         // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
         // Do not forget to add translations for your config options to the en_us.json file.
-        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-    }
+  //      container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+ //   }
 
-    @SubscribeEvent
-    static void onClientSetup(FMLClientSetupEvent event) {
+  //  @SubscribeEvent
+  //  static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        BiteCraft.LOGGER.info("HELLO FROM CLIENT SETUP");
-        BiteCraft.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-    }
-}
+  //      BiteCraft.LOGGER.info("HELLO FROM CLIENT SETUP");
+   //     BiteCraft.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+  //  }
+//}
