@@ -56,10 +56,14 @@ public class ModCreativeModeTabs {
                         //output.accept(ModBlocks.CAROT_CAKE);
                         //VEGAN
                         output.accept(ModItems.HERB_SALAD);
+                        //Lactate
+                        output.accept(ModItems.CHEESE);
+
 
                         //MISC
                         output.accept(ModItems.FRIED_EGG);
 
+                        //Blocks
                         output.accept(ModBlocks.CHEESE_PRESS.get());
 
 

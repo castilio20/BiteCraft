@@ -75,7 +75,9 @@ public class ModItems {
     public static final DeferredItem<Item> FRIED_EGG= ITEMS.register("fried_egg",
             () -> new BowItem(new Item.Properties().food(ModFoodProperties.CAKE_SLICE)));
 
-
+    //Lacatate
+    public static final DeferredItem<Item> CHEESE= ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CAKE_SLICE)));
     // Helper methods
     public static Item.Properties basicItem() {
         return new Item.Properties();

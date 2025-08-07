@@ -17,6 +17,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.MilkBucketItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -122,7 +124,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 1);
+        ItemStack output = new ItemStack(ModItems.CHEESE.get(), 1);
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -143,10 +145,11 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 3);
+        ItemStack output = new ItemStack(ModItems.CHEESE.get(), 3);
 
-        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.DOUGH) &&
+        return itemHandler.getStackInSlot(INPUT_SLOT).is(Items.MILK_BUCKET) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {
