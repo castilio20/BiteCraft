@@ -20,6 +20,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.COOKED_BACON.get());
         basicItem(ModItems.STEW_CHICKEN.get());
         basicItem(ModItems.GOLDEN_POTATO.get());
+        basicItem(ModItems.APPLE_JUICE.get());
+        basicItem(ModItems.BERRY_JUICE.get());
+        basicItem(ModItems.CARROT_JUICE.get());
+        basicItem(ModItems.MELLON_JUICE.get());
+        basicItem(ModItems.PUMPKIN_JUICE.get());
+
 
         basicItem(ModItems.CAKE_SLICE.get());
         basicItem(ModItems.PIE_SLICE.get());

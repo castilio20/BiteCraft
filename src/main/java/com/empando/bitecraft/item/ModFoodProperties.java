@@ -55,7 +55,7 @@ public class ModFoodProperties {
             .nutrition(2).saturationModifier(0.4f).build();
     public static final FoodProperties BERRY_JUICE = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.4f).build();
-    public static final FoodProperties CAROT_JUICE = (new FoodProperties.Builder())
+    public static final FoodProperties CARROT_JUICE = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.4f).build();
     public static final FoodProperties PUMPKIN_JUICE = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.4f).build();

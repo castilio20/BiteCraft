@@ -58,8 +58,8 @@ public class ModItems {
             () -> new DrinkJuice(new Item.Properties().food(ModFoodProperties.MELLON_JUICE)));
     public static final DeferredItem<Item> BERRY_JUICE= ITEMS.register("berry_juice",
             () -> new DrinkJuice(new Item.Properties().food(ModFoodProperties.BERRY_JUICE)));
-    public static final DeferredItem<Item> CAROT_JUICE= ITEMS.register("carot_juice",
-            () -> new DrinkJuice(new Item.Properties().food(ModFoodProperties.CAROT_JUICE)));
+    public static final DeferredItem<Item> CARROT_JUICE= ITEMS.register("carrot_juice",
+            () -> new DrinkJuice(new Item.Properties().food(ModFoodProperties.CARROT_JUICE)));
     public static final DeferredItem<Item> PUMPKIN_JUICE= ITEMS.register("pumpkin_juice",
             () -> new DrinkJuice(new Item.Properties().food(ModFoodProperties.PUMPKIN_JUICE)));
     //VEGAN

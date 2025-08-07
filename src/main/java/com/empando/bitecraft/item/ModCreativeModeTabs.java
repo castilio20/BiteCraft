@@ -49,7 +49,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.APPLE_JUICE);
                         output.accept(ModItems.MELLON_JUICE);
                         output.accept(ModItems.BERRY_JUICE);
-                        output.accept(ModItems.CAROT_JUICE);
+                        output.accept(ModItems.CARROT_JUICE);
                         output.accept(ModItems.PUMPKIN_JUICE);
 
                         //BLOCKS??
