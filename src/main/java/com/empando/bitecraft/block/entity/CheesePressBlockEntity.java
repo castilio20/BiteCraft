@@ -40,7 +40,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 900;
 
     public CheesePressBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.CHEESE_PRESS_BE.get(), pos, blockState);
@@ -122,7 +122,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 8);
+        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 1);
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -131,7 +131,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
 
     private void resetProgress() {
         progress = 0;
-        maxProgress = 72;
+        maxProgress = 900;
     }
 
     private boolean hasCraftingFinished() {
@@ -143,7 +143,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 8);
+        ItemStack output = new ItemStack(ModItems.DOUGH.get(), 3);
 
         return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.DOUGH) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);

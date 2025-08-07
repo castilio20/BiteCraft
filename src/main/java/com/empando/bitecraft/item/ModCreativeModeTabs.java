@@ -15,7 +15,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BiteCraft.MODID);
 
-    public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
+    public static final Supplier<CreativeModeTab> BITECRAFT_ITEMS_TAB = CREATIVE_MODE_TAB.register("bitecraft_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DOUGH.get()))
                     .displayItems((itemDisplayParameters, output) -> {
 

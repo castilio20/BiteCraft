@@ -7,7 +7,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
     public static final FoodProperties DOUGH = (new FoodProperties.Builder())
-            .nutrition(2).saturationModifier(0.1F).effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.8F).build();
+            .nutrition(2).saturationModifier(0.1F).effect(new MobEffectInstance(MobEffects.HUNGER, 600, 1), 0.8F).build();
     //Meat
     public static final FoodProperties RAW_BACON = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.4f).build();
