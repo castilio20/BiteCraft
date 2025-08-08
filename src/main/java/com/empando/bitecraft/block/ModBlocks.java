@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(BiteCraft.MODID);
     public static final DeferredBlock<Block> CHEESE_PRESS = registerBlock("cheese_press",
-            () -> new CheesePressBlock(BlockBehaviour.Properties.of()));
+            () -> new CheesePressBlock(BlockBehaviour.Properties.of().noOcclusion()));
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

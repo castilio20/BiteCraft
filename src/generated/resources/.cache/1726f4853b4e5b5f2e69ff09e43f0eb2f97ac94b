@@ -1,9 +1,14 @@
-// 1.21.1	2024-10-19T04:30:41.858221212	Item Models: bitecraft
+// 1.21.1	2025-08-07T21:34:59.9534631	Item Models: bitecraft
+ac36089a02d4bc73ca3610789cf6145c5bb2dad3 assets/bitecraft/models/item/apple_juice.json
+9a8b771239bdc42ec5d6af670efc9d826f153c85 assets/bitecraft/models/item/berry_juice.json
 c2b5ae06c84c867cda0a899343cd5a66e7143768 assets/bitecraft/models/item/cake_slice.json
+c93535ab365ecdcb3de25519fc9c05bef5ed1a1f assets/bitecraft/models/item/carrot_juice.json
 ba4abaf15d76b0a7478b91627a1a3c8bfdb375e0 assets/bitecraft/models/item/cooked_bacon.json
 68bf8415c8a295326bfece68a5ff3f96f0ff36ac assets/bitecraft/models/item/dough.json
 c039df47cc1ce56d863d49a47126460f87a7a01a assets/bitecraft/models/item/golden_potato.json
 730d941b6b4cfcd849711016639b83ec36f7fb94 assets/bitecraft/models/item/honey_bread.json
+76bc2826136643db671bfa81d8573885fa3cbb47 assets/bitecraft/models/item/mellon_juice.json
 be7f6ab254cdb02e10908135d0cdc87eeddd9aa7 assets/bitecraft/models/item/pie_slice.json
+67fed9cf2a0fc57feb54e8ccb5a884db99fe723f assets/bitecraft/models/item/pumpkin_juice.json
 4e050852042813af4818aab557e99077b57b3a32 assets/bitecraft/models/item/raw_bacon.json
 22b275b95d193ec1c82db3fdb7c22794319adfcb assets/bitecraft/models/item/stew_chicken.json
