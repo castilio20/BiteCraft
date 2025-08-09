@@ -12,11 +12,16 @@ import net.minecraft.world.entity.player.Inventory;
 public class CheesePressScreen extends AbstractContainerScreen<CheesePressMenu> {
     private static final ResourceLocation GUI_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(BiteCraft.MODID,"textures/gui/cheese_press/cheese_press_gui.png");
-    private static final ResourceLocation ARROW_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(BiteCraft.MODID,"textures/gui/arrow_progress.png");
+
 
     public CheesePressScreen(CheesePressMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
+    }
+    @Override
+    protected void init() {
+        super.init();
+        this.inventoryLabelY = 10000;
+        this.titleLabelY = 10000;
     }
 
     @Override
@@ -36,7 +41,8 @@ public class CheesePressScreen extends AbstractContainerScreen<CheesePressMenu> 
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(ARROW_TEXTURE,x + 73, y + 35, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);        }
+            guiGraphics.blit(GUI_TEXTURE, x + 85, y + 30, 176, 0, 8, menu.getScaledArrowProgress());
+        }
     }
 
     @Override

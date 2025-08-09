@@ -30,8 +30,8 @@ public class CheesePressMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 34));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 104, 34));
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 80, 11));
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 80, 59));
 
         addDataSlots(data);
     }
