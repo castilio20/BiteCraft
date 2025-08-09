@@ -1,9 +1,11 @@
 package com.empando.bitecraft;
 
+import com.empando.bitecraft.block.custom.render.DryingRackBlockEntityRenderer;
 import com.empando.bitecraft.block.entity.ModBlockEntities;
 import com.empando.bitecraft.item.ModItems;
 import com.empando.bitecraft.screen.ModMenuTypes;
 import com.empando.bitecraft.screen.custom.CheesePressScreen;
+import com.empando.bitecraft.screen.custom.DryingRackScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -28,7 +30,6 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import static com.empando.bitecraft.block.ModBlocks.BLOCKS;
 import static com.empando.bitecraft.item.ModCreativeModeTabs.CREATIVE_MODE_TAB;
 import static com.empando.bitecraft.item.ModItems.ITEMS;
-import static net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion.MOD_ID;
 
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -107,12 +108,15 @@ public class BiteCraft {
 
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.DRYNG_RACK_BE.get(), DryingRackBlockEntityRenderer::new);
         }
 
 
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.CHEESE_PRESS_MENU.get(), CheesePressScreen::new);
+            event.register(ModMenuTypes.DRYNG_RACK_MENU.get(), DryingRackScreen::new);
+
         }
     }
 }

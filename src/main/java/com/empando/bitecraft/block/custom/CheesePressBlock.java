@@ -81,5 +81,6 @@ public class CheesePressBlock extends BaseEntityBlock {
 
         return createTickerHelper(blockEntityType, ModBlockEntities.CHEESE_PRESS_BE.get(),
                 (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
+
     }
 }

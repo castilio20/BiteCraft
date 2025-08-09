@@ -9,18 +9,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class CheesePressScreen extends AbstractContainerScreen<CheesePressMenu> {
+public class DryingRackScreen extends AbstractContainerScreen<DryingRackMenu> {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(BiteCraft.MODID,"textures/gui/cheese_press/cheese_press_gui.png");
-    private static final ResourceLocation ARROW_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(BiteCraft.MODID,"textures/gui/arrow_progress.png");
+            ResourceLocation.fromNamespaceAndPath(BiteCraft.MODID, "textures/gui/dryng_rack/dryng_rack_gui.png");
 
-    public CheesePressScreen(CheesePressMenu menu, Inventory playerInventory, Component title) {
+    public DryingRackScreen(DryingRackMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
     }
 
     @Override
-    protected void renderBg(GuiGraphics guiGraphics, float v, int i, int i1) {
+    protected void renderBg(GuiGraphics guiGraphics, float pPartialTick, int pMouseX, int pMouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, GUI_TEXTURE);
@@ -29,14 +27,6 @@ public class CheesePressScreen extends AbstractContainerScreen<CheesePressMenu> 
         int y = (height - imageHeight) / 2;
 
         guiGraphics.blit(GUI_TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
-
-        renderProgressArrow(guiGraphics, x, y);
-
-    }
-
-    private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
-        if(menu.isCrafting()) {
-            guiGraphics.blit(ARROW_TEXTURE,x + 73, y + 35, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);        }
     }
 
     @Override

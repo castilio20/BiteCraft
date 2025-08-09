@@ -17,7 +17,9 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("cheese_press_be", () -> BlockEntityType.Builder.of(
                     CheesePressBlockEntity::new, ModBlocks.CHEESE_PRESS.get()).build(null));
 
-
+    public static final Supplier<BlockEntityType<DryingRackBlockEntity>> DRYNG_RACK_BE =
+            BLOCK_ENTITIES.register("dryng_rack_be", () -> BlockEntityType.Builder.of(
+                    DryingRackBlockEntity::new, ModBlocks.DRYNG_RACK.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

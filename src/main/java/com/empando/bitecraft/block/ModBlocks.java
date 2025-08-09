@@ -3,18 +3,14 @@ package com.empando.bitecraft.block;
 
 import com.empando.bitecraft.BiteCraft;
 import com.empando.bitecraft.block.custom.CheesePressBlock;
+import com.empando.bitecraft.block.custom.DryingRackBlock;
 import com.empando.bitecraft.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CandleCakeBlock;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -24,6 +20,9 @@ public class ModBlocks {
             DeferredRegister.createBlocks(BiteCraft.MODID);
     public static final DeferredBlock<Block> CHEESE_PRESS = registerBlock("cheese_press",
             () -> new CheesePressBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+    public static final DeferredBlock<Block> DRYNG_RACK = registerBlock("dryng_rack",
+            () -> new DryingRackBlock(BlockBehaviour.Properties.of()));
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

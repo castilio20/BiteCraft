@@ -2,6 +2,7 @@ package com.empando.bitecraft.screen;
 
 import com.empando.bitecraft.BiteCraft;
 import com.empando.bitecraft.screen.custom.CheesePressMenu;
+import com.empando.bitecraft.screen.custom.DryingRackMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -17,6 +18,8 @@ public class ModMenuTypes  {
 
     public static final DeferredHolder<MenuType<?>, MenuType<CheesePressMenu>> CHEESE_PRESS_MENU =
             registerMenuType("cheese_press_menu", CheesePressMenu::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<DryingRackMenu>> DRYNG_RACK_MENU =
+            registerMenuType("dryng_rack_menu", DryingRackMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

@@ -42,7 +42,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 900;
+    private int maxProgress = 120;
 
     public CheesePressBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.CHEESE_PRESS_BE.get(), pos, blockState);
@@ -133,7 +133,7 @@ public class CheesePressBlockEntity extends BlockEntity implements MenuProvider 
 
     private void resetProgress() {
         progress = 0;
-        maxProgress = 900;
+        maxProgress = 120;
     }
 
     private boolean hasCraftingFinished() {

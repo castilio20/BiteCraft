@@ -1,15 +1,14 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"render_type": "minecraft:cutout",
 	"textures": {
-		"0": "minecraft:block/cauldron_side",
-		"1": "minecraft:block/cauldron_top",
-		"2": "minecraft:block/stone",
-		"3": "minecraft:block/cauldron_inner",
-		"4": "minecraft:block/beehive_end",
-		"5": "minecraft:block/anvil_top",
-		"6": "minecraft:block/iron_bars"
+		"0": "block/cauldron_side",
+		"1": "block/cauldron_top",
+		"2": "block/stone",
+		"3": "block/cauldron_inner",
+		"4": "block/beehive_end",
+		"5": "block/anvil_top",
+		"6": "block/iron_bars"
 	},
 	"elements": [
 		{
@@ -114,21 +113,23 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [75, 45, 0],
-			"translation": [0, 2.5, 0],
+			"rotation": [74, 1, 1],
+			"translation": [0, 1, 0],
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [75, 45, 0],
-			"translation": [0, 2.5, 0],
+			"rotation": [75, 8, 0],
+			"translation": [0, 1.75, 0],
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, 45, 0],
+			"rotation": [-1, -40, 0],
+			"translation": [0.25, 1.5, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, -135, 0],
+			"rotation": [6, -15, 5],
+			"translation": [0, 2.5, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
@@ -136,10 +137,12 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, -135, 0],
-			"scale": [0.625, 0.625, 0.625]
+			"rotation": [0, -180, 0],
+			"translation": [0, -3, 0],
+			"scale": [0.58, 0.52, 0.625]
 		},
 		"fixed": {
+			"translation": [0, -2, 0],
 			"scale": [0.5, 0.5, 0.5]
 		}
 	},

@@ -65,6 +65,8 @@ public class ModCreativeModeTabs {
 
                         //Blocks
                         output.accept(ModBlocks.CHEESE_PRESS.get());
+                        output.accept(ModBlocks.DRYNG_RACK.get());
+
 
 
 
