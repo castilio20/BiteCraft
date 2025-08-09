@@ -1,8 +1,9 @@
-// 1.21.1	2025-08-07T21:34:59.9534631	Item Models: bitecraft
+// 1.21.1	2025-08-09T12:47:15.2443316	Item Models: bitecraft
 ac36089a02d4bc73ca3610789cf6145c5bb2dad3 assets/bitecraft/models/item/apple_juice.json
 9a8b771239bdc42ec5d6af670efc9d826f153c85 assets/bitecraft/models/item/berry_juice.json
 c2b5ae06c84c867cda0a899343cd5a66e7143768 assets/bitecraft/models/item/cake_slice.json
 c93535ab365ecdcb3de25519fc9c05bef5ed1a1f assets/bitecraft/models/item/carrot_juice.json
+ab11bb033eca3b360d92c2d51a591160c289498b assets/bitecraft/models/item/cheese.json
 ba4abaf15d76b0a7478b91627a1a3c8bfdb375e0 assets/bitecraft/models/item/cooked_bacon.json
 68bf8415c8a295326bfece68a5ff3f96f0ff36ac assets/bitecraft/models/item/dough.json
 c039df47cc1ce56d863d49a47126460f87a7a01a assets/bitecraft/models/item/golden_potato.json

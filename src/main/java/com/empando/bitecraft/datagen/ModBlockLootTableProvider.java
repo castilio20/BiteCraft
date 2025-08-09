@@ -26,6 +26,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.CHEESE_PRESS.get());
+        this.dropSelf(ModBlocks.DRYNG_RACK.get());
+
 
 
 

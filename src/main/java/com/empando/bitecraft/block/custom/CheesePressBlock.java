@@ -11,6 +11,7 @@ import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.RenderShape;
@@ -83,4 +84,5 @@ public class CheesePressBlock extends BaseEntityBlock {
                 (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
 
     }
+
 }
